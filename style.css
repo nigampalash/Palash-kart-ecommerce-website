@@ -1,0 +1,170 @@
+body {
+    background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(90deg, #0f2027 0%, #2c5364 100%);
+}
+
+.glass-nav {
+    backdrop-filter: blur(10px);
+    background: rgba(15,32,39,0.85)!important;
+    border-bottom: 1px solid #2c5364;
+}
+
+.glass-card, .glass-modal {
+    background: rgba(255,255,255,0.08);
+    border-radius: 22px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(12px);
+    border: 1.5px solid rgba(255,255,255,0.18);
+}
+
+.glass-input, .glass-btn {
+    background: rgba(255,255,255,0.18)!important;
+    border: 1.5px solid #2c5364!important;
+    color: #fff!important;
+    border-radius: 12px!important;
+    box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.08);
+}
+
+.glass-input:focus {
+    border-color: #00ffe7!important;
+    box-shadow: 0 0 0 2px #00ffe7bb;
+    color: #fff;
+    background: rgba(255,255,255,0.22)!important;
+}
+
+.hero-section {
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    border-radius: 0 0 32px 32px;
+    margin-bottom: 32px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.12);
+}
+
+.neon-text {
+    color: #00ffe7;
+    text-shadow: 0 0 8px #00ffe7, 0 0 16px #00ffe7aa;
+    letter-spacing: 1.5px;
+}
+
+.glass-text {
+    color: #e0e0e0;
+    text-shadow: 0 1px 4px #00000044;
+}
+
+.card {
+    border-radius: 22px;
+    box-shadow: 0 2px 16px 0 rgba(31, 38, 135, 0.13);
+    transition: transform 0.18s, box-shadow 0.18s;
+    margin-bottom: 32px;
+    background: rgba(255,255,255,0.10);
+    border: 1.5px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(8px);
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px 0 #00ffe7aa;
+    border-color: #00ffe7;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 22px 22px 0 0;
+    padding: 16px;
+    box-shadow: 0 2px 8px #00ffe733;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #00ffe7;
+    text-shadow: 0 0 4px #00ffe7aa;
+}
+
+.card-text {
+    color: #e0e0e0;
+}
+
+.price {
+    color: #00ffe7;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-shadow: 0 0 4px #00ffe7aa;
+}
+
+.btn-add {
+    background: linear-gradient(90deg, #00ffe7 0%, #00c3ff 100%);
+    color: #232526!important;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px #00ffe733;
+}
+
+.btn-add:hover {
+    background: linear-gradient(90deg, #00c3ff 0%, #00ffe7 100%);
+    color: #fff!important;
+    box-shadow: 0 4px 16px #00ffe7bb;
+}
+
+#cartItems .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #00ffe733;
+    padding-bottom: 12px;
+}
+
+#cartItems .cart-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 16px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+#cartItems .cart-item-title {
+    flex: 1;
+    font-weight: 500;
+    color: #00ffe7;
+}
+
+#cartItems .cart-item-price {
+    font-weight: 600;
+    color: #00ffe7;
+}
+
+#cartItems .remove-btn {
+    background: none;
+    border: none;
+    color: #ff6161;
+    font-size: 1.2rem;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.pay-animate {
+    animation: payPulse 1.2s infinite alternate;
+}
+@keyframes payPulse {
+    0% { box-shadow: 0 0 0 0 #00ffe7bb; }
+    100% { box-shadow: 0 0 16px 8px #00ffe744; }
+}
+
+@media (max-width: 768px) {
+    .card {
+        cursor: pointer;
+    }
+    .hero-section {
+        font-size: 1.1rem;
+        padding: 2rem 0;
+    }
+}
